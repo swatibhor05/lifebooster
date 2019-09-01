@@ -9,7 +9,11 @@
     <meta name="description" content="Vuesax admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Vuesax admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>Dashboard analytics - Vuesax - Bootstrap HTML admin template</title>
+
+    @section('title')
+    @show
+
+
     @include('application.layouts.styles')
 
   </head>
@@ -22,7 +26,7 @@
       <!-- BEGIN: Header-->
       <div class="content-overlay"></div>
       @include('application.layouts.header')
-      
+
       <!-- END: Header-->
       <div class="content-wrapper">
           @section('content')
@@ -30,15 +34,15 @@
       </div>
     </div>
     <!-- END: Content-->
-   
+
     <!-- Buynow Button-->
-   
+
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
     <!-- BEGIN: Footer-->
-   
+
     <!-- END: Footer-->
-    
+
     @include('application.layouts.scripts')
   <center><font size="2"></font></center></body>
   <!-- END: Body-->

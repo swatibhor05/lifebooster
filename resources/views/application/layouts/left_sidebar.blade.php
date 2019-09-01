@@ -18,18 +18,18 @@
           </li>
           <li class="{{request()->is('career')?'active':''}} nav-item"><a href="{{route('career')}}"><i class="feather icon-bar-chart"></i><span class="menu-title" data-i18n="Email">Career & Finance</span></a>
           </li>
-          <li class=" nav-item"><a href="health.html"><i class="feather icon-heart"></i><span class="menu-title" data-i18n="Chat">Health</span></a>
+          <li class="{{request()->is('health')?'active':''}} nav-item"><a href="{{route('helath')}}"><i class="feather icon-heart"></i><span class="menu-title" data-i18n="Chat">Health</span></a>
           </li>
-          <li class=" nav-item"><a href="relationship.html"><i class="feather icon-users"></i><span class="menu-title" data-i18n="Todo">Relationships</span></a>
+          <li class="{{request()->is('relationship')?'active':''}} nav-item"><a href="{{route('relationship')}}"><i class="feather icon-users"></i><span class="menu-title" data-i18n="Todo">Relationships</span></a>
           </li>
-          <li class=" nav-item"><a href="home.html"><i class="feather icon-home"></i><span class="menu-title" data-i18n="Calender">Home</span></a>
+          <li class="{{request()->is('home')?'active':''}} nav-item"><a href="home"><i class="feather icon-home"></i><span class="menu-title" data-i18n="Calender">Home</span></a>
           </li>
           <li class="{{request()->is('children')?'active':''}} nav-item"><a href="{{route("children")}}"><i class="feather icon-user"></i><span class="menu-title" data-i18n="Ecommerce">Children</span></a>
 
           </li>
-            <li class=" nav-item"><a href="innerjoy.html"><i class="feather icon-sun"></i><span class="menu-title" data-i18n="Calender">Inner Joy</span></a>
+            <li class="{{request()->is('innerjoy')?'active':''}} nav-item"><a href="innerjoy"><i class="feather icon-sun"></i><span class="menu-title" data-i18n="Calender">Inner Joy</span></a>
           </li>
-          
+
         </ul>
       </div>
     </div>
